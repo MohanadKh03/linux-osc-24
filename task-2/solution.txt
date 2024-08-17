@@ -1,0 +1,20 @@
+git config --global user.name Mohanad
+git config --global user.email mohanadkhaled87@gmail.com
+git clone https://github.com/MohanadKh03/linux-osc-24
+cd linux-osc-24
+mkdir task-2
+cd task-2
+touch greeting.txt
+cat "hello world" >> greeting.txt
+git add .
+git commit -m "Added greeting"
+git branch intro
+git checkout intro
+echo "I love git" >> greeting.txt
+git add .
+git commit -m "Added I love git"
+git checkout master
+git merge intro
+git tag v1 7a1cbe2
+git push
+git push --tags origin
