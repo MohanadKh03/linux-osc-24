@@ -1,0 +1,1 @@
+grep -Eo [[:alnum:]]+@[[:alnum:]]+.[[:alnum:]]+ info.csv | sort | uniq | tee emails.txt
